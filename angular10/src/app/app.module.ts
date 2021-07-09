@@ -13,6 +13,10 @@ import{SharedService} from './shared.service';
 
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { WebpayPlusComponent } from './webpay-plus/webpay-plus.component';
+import { CreateTransactionComponent } from './webpay-plus/create-transaction/create-transaction.component';
+import { ReturnPageComponent } from './return-page/return-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
     AddEditDepComponent,
     EmployeeComponent,
     ShowEmpComponent,
-    AddEditEmpComponent
+    AddEditEmpComponent,
+    WebpayPlusComponent,
+    CreateTransactionComponent,
+    ReturnPageComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

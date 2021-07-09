@@ -54,4 +54,8 @@ readonly PhotoUrl = "http://localhost:53535/Photos/";
     return this.http.get<any[]>(this.APIUrl+'/Employee/GetAllDepartmentNames');
   }
 
+  createTransaction(val:any){
+    return this.http.get(this.APIUrl+'/WebpayPlus',val);
+  }
+
 }
