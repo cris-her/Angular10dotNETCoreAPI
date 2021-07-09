@@ -31,3 +31,5 @@ select * from dbo.Employee
 ng serve --open
 
 170-9
+"Data Source=.;Initial Catalog=EmployeeDB; Integrated Security=true"
+dotnet .\ASSEMBLY.dll
