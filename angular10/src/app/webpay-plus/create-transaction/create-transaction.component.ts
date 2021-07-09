@@ -6,6 +6,9 @@ import {SharedService} from 'src/app/shared.service';
   templateUrl: './create-transaction.component.html',
   styleUrls: ['./create-transaction.component.css']
 })
+
+
+
 export class CreateTransactionComponent implements OnInit {
 
   constructor(private service:SharedService) { }
@@ -21,25 +24,25 @@ export class CreateTransactionComponent implements OnInit {
     this.SessionId=this.trans.SessionId;
     this.Amount=this.trans.Amount;
     this.ReturnUrl="http://localhost:4200/NormalReturn";
-  }
-  
-  createTrans(){
-    var val = {BuyOrder:this.BuyOrder,
-                SessionId:this.SessionId,
-                Amount:this.Amount,
-                ReturnUrl:this.ReturnUrl};
-    this.service.createTransaction(val).subscribe(res=>{
-      alert(res.toString());
-    });
+    this.createTrans();
+    
   }
 
-  updateDepartment(){
-    /*
-    var val = {DepartmentId:this.DepartmentId,
-      DepartmentName:this.DepartmentName};
-    this.service.updateDepartment(val).subscribe(res=>{
-    alert(res.toString());
-    });*/
+  
+  
+  createTrans(){
+    var val = {Amount:this.Amount};
+    this.service.createTransaction(val).subscribe(res=>{
+      //alert(res.toString());
+      
+      var output = '';
+      for (var property in res) {
+        output += property + ': ' + res[property]+'; ';
+      }
+      alert(output);
+      //https://stackoverflow.com/questions/133925/javascript-post-request-like-a-form-submit
+      //post_to_url(url, params)
+    });
   }
 
 }

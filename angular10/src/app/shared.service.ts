@@ -55,7 +55,7 @@ readonly PhotoUrl = "http://localhost:53535/Photos/";
   }
 
   createTransaction(val:any){
-    return this.http.get(this.APIUrl+'/WebpayPlus',val);
+    return this.http.post(this.APIUrl+'/WebpayPlus',val);
   }
 
 }
