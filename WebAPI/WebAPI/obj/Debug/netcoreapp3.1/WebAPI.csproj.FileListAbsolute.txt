@@ -60,3 +60,5 @@ C:\Projects\Angular10dotNETCoreAPI\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.
 C:\Projects\Angular10dotNETCoreAPI\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\Projects\Angular10dotNETCoreAPI\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Projects\Angular10dotNETCoreAPI\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+C:\Projects\Angular10dotNETCoreAPI\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\MQTTnet.dll
+C:\Projects\Angular10dotNETCoreAPI\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\Transbank.dll

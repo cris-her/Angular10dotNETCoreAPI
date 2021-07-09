@@ -11,7 +11,7 @@ const routes: Routes = [
 {path:'employee',component:EmployeeComponent},
 {path:'department',component:DepartmentComponent},
 {path:'WebpayPlus',component:WebpayPlusComponent},
-{path:'NormalReturn',component:ReturnPageComponent},
+{path:'ReturnPage',component:ReturnPageComponent},
 {path:'', redirectTo:'/WebpayPlus', pathMatch:'full'}, // redirect to `first-component`
 {path:'**', component:PageNotFoundComponent}  // Wildcard route for a 404 page
 ];
